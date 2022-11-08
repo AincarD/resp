@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 100px 20px;
+  background-color: #150050;
+}
+.navbar .navbar__logo {
+  color: #fff;
+  transition: 0.6s;
+}
+.navbar .navbar__logo:hover {
+  color: #FB2576;
+}
+.navbar .btn {
+  background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  border: 2px solid #150050;
+  font-weight: 900;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.navbar .btn:hover {
+  background-color: #FB2576;
+}
+.profile {
+  padding: 150px 100px 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3F0071;
+  height: 35vw;
+}
+.profile .profile__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #FB2576;
+}
+.profile .profile__text .profile__greetings {
+  font-size: 20px;
+}
+.profile .profile__text .profile__title {
+  font-weight: 900;
+  font-size: 20px;
+}
+.profile .profile__text .profile__info {
+  width: 40vw;
+  font-size: 20px;
+  margin: 30px 0px;
+}
+.profile .profile__text .profile__socials .fa-brands {
+  margin: 0px 20px;
+}
+.profile .profile__img {
+  background-color: #FB2576;
+  width: 35vw;
+  height: 30vw;
+  border-radius: 1000px;
+}
+.skills {
+  padding: 150px 100px 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skills .skills__title {
+  margin: 50px;
+  font-size: 40px;
+  font-weight: 900;
+}
+.skills .skill__wrapper {
+  display: flex;
+}
+.skills .skill__wrapper .skill {
+  margin: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FB2576;
+  border-radius: 100px;
+  padding: 50px 20px 50px;
+  height: 20vw;
+  width: 15vw;
+  transition: 0.5s;
+}
+.skills .skill__wrapper .skill .skill_title {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 900;
+}
+.skills .skill__wrapper .skill .skill_text {
+  color: #fff;
+  margin: 40px 0;
+  text-align: center;
+}
+.skills .skill__wrapper .skill:hover {
+  width: 17vw;
+  height: 22vw;
+  margin-top: 20px;
+}
+@media screen and (max-width: 1000px) {
+  .profile {
+    padding: 30px 30px 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #3F0071;
+    height: 100%;
+  }
+  .profile .profile__img {
+    margin: 30px 0;
+    width: 50vw;
+    height: 50vw;
+  }
+  .profile .profile__text .profile__info {
+    width: 80vw;
+    text-align: center;
+  }
+  .skills .skill__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .skills .skill__wrapper .skill {
+    width: 70vw;
+    height: 40vw;
+  }
+  .skills .skill__wrapper .skill:hover {
+    width: 71vw;
+    height: 41vw;
+  }
+}
